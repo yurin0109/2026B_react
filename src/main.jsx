@@ -4,15 +4,35 @@ import { createRoot } from "react-dom/client";
 const root = document.querySelector( '#root' )
 //[필수] 3. 가져온 root 마크업을 createRoot 함수에 전달한다.
 const create = createRoot( root );
-// [선택] 최초로 화면을 그리기 할 컴포넌트 가져와서 렌더링
-// 1. import 이용하여 컴포넌트 가져온다. 
-// import App from './App.jsx'
-// 2. 가져온 컴포넌트 렌더링하기
-// create.render( <App> </App> )
 
-// [day01] render 1번 가능하므로 예제 컴포넌트 변경
-// import MyMarkup from "./example/day01/MyMarKup";
-// create.render( <MyMarkup> </MyMarkup>)
+// [day05]
+// import App from "./example/day05/App";
+// import { BrowserRouter } from "react-router-dom";
+// create.render( 
+//     <BrowserRouter> { /* 최초 렌더링 컴포넌트 감싼다.*/ }
+//         <App /> 
+//     </BrowserRouter>
+// )
 
-import Component6 from "./example/day01/Component6";
-create.render( <Component6> </Component6> )
+
+// [day05]
+// import Practice2 from "./example/day05/Practice2";
+// import { BrowserRouter } from "react-router-dom";
+// import Component from "./example/practice/Component";
+// create.render( 
+//   <BrowserRouter> { /* 최초 렌더링 컴포넌트 감싼다.*/ }
+//        <Component /> 
+//    </BrowserRouter>
+// )
+
+// import { BrowserRouter } from "react-router-dom";
+
+// day13
+// import { BrowserRouter } from "react-router-dom";
+// import App from "./example/day13/App";
+// create.render(<BrowserRouter><App/></BrowserRouter>)
+
+// day14
+import { BrowserRouter } from "react-router-dom";
+import ChatRoom from "./example/day14/ChatRoom";
+create.render(<ChatRoom/>)
